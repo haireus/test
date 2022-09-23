@@ -282,6 +282,20 @@
   .logo {
     height: 50px;
   }
+
+  .btn-link {
+    font-size: 14px;
+    padding: 0 12px;
+    margin-right: 0px;
+  }
+
+  .tooltip {
+    font-size: 14px;
+  }
+
+  .customer-service {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 768px) {
