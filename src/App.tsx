@@ -8,7 +8,6 @@ import navIcon from "./logo/nav.png";
 import userIcon from "./logo/user.png";
 
 function App() {
-  // const [minicart, setMiniCart] = useState();
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   const dataMiniCart = {
@@ -91,7 +90,11 @@ function App() {
                   </a>
                 </li>
                 <li className="header-nav-list-item">
-                  <a className="tooltip" href="/">
+                  <a
+                    className="tooltip"
+                    href="https://secure.neweggbusiness.com/new/newmyaccount/dashboard.aspx"
+                    title="My Account/Log In"
+                  >
                     My Account/Log In <img src={ArrowDown} alt="" />
                     <div className="tooltiptext">
                       <div>
@@ -105,16 +108,86 @@ function App() {
                         </a>
                       </div>
                       <ul>
-                        <li>Account Details</li>
-                        <li>Track an Order</li>
-                        <li>Order History</li>
-                        <li>Tax Exemption Application</li>
-                        <li>To-Buy List</li>
-                        <li>Rewards Dashboard</li>
-                        <li>Net Terms</li>
-                        <li>Return an Item</li>
-                        <li>Return Policy</li>
-                        <li>Check Return Status</li>
+                        <li>
+                          <a
+                            href="https://secure.neweggbusiness.com/newmyaccount/dashboard.aspx"
+                            title="Account Details"
+                          >
+                            Account Details
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://secure.neweggbusiness.com/new/newmyaccount/trackanorder.aspx"
+                            title="Track an Order"
+                          >
+                            Track an Order
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://secure.neweggbusiness.com/new/newmyaccount/orderhistory.aspx"
+                            title="Order History"
+                          >
+                            Order History
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://secure.neweggbusiness.com/new/newmyaccount/taxexemption"
+                            title="Tax Exemption Application"
+                          >
+                            Tax Exemption Application
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://secure.neweggbusiness.com/new/wishlist/mysavedwishlists.aspx"
+                            title="To-Buy List"
+                          >
+                            To-Buy List
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://secure.neweggbusiness.com/new/newmyaccount/rewards.aspx"
+                            title=" Rewards Dashboard"
+                          >
+                            Rewards Dashboard
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://secure.neweggbusiness.com/new/newmyaccount/netterms.aspx"
+                            title="Net Terms"
+                          >
+                            Net Terms
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://secure.neweggbusiness.com/new/rma/returns.aspx"
+                            title="Return an Item"
+                          >
+                            Return an Item
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.neweggbusiness.com/promotions/NEpro/22-0073/index.html"
+                            title="Return Policy"
+                          >
+                            Return Policy
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://secure.neweggbusiness.com/new/rma/rmahistory.aspx"
+                            title="Check Return Status"
+                          >
+                            Check Return Status
+                          </a>
+                        </li>
                       </ul>
                     </div>
                   </a>
@@ -133,7 +206,11 @@ function App() {
             )}
 
             <li className="header-nav-list-item">
-              <a className="mini-cart-tooltip" href="/">
+              <a
+                className="mini-cart-tooltip"
+                href="https://secure.neweggbusiness.com/new/shopping/shoppingcart.aspx"
+                title="cart"
+              >
                 <div className="cart-container">
                   <img
                     src={BuildUrlImage(
