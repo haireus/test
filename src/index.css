@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "iNE";
+  src: url("./fonts/iNE.eot?-sy7fu4");
+  src: url("./fonts/iNE.eot?#iefix-sy7fu4") format("embedded-opentype"),
+    url("./fonts/iNE.ttf?-sy7fu4") format("truetype"),
+    url("./fonts/iNE.woff?-sy7fu4") format("woff"),
+    url("./fonts/iNE.svg?-sy7fu4#iNE") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body,
 html {
   margin: 0;
