@@ -1,14 +1,109 @@
-.footer-nav-640 {
+.footer-640-wrapper {
+  width: 100%;
+}
+.footer-go-top p {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 0;
+  width: 80px;
+  font-size: 11px;
+  text-transform: uppercase;
+  border-bottom: 0;
+  text-align: center;
+  color: #012d6b;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.footer-go-top p::before {
+  display: block;
+  font-size: 10px;
+  font-family: "iNE" !important;
+  color: #999;
+  content: "\e619";
+}
+
+.footer-phone {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.footer-phone a {
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 0;
+  color: #012d6b;
+  text-decoration: none;
 }
 
 .footer-nav-title-640 {
+  position: relative;
+  margin: 0 15px 5px 15px;
+  padding: 12px 15px;
+  font-size: 13px;
+  background: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font-weight: 600;
+  color: #333;
+  text-transform: none;
 }
 
-.footer-nav-active {
+.footer-nav-title-640::after {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 10px;
+  font-family: "iNE" !important;
+  color: #ccc;
+  content: "\e616";
 }
 
-.footer-list-640 {
+.footer-nav-title-640-active {
+  color: #fff;
+  background: #888;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+.footer-nav-title-640-active::after {
+  transform: rotate(-180deg);
 }
 
-.footer-item-640 {
+.accordion-item-container {
+  position: relative;
+  top: -5px;
+  transition: height 0.5s ease;
+  overflow: hidden;
+  margin: 0;
+  list-style: none;
+  margin: 0 15px 0px 15px;
+  background: #fff;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  -ms-border-radius: 0 0 3px 3px;
+  -o-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  padding: 0;
+}
+
+.footer-item-640:first-child > a {
+  border-top: 0;
+}
+.footer-item-640 > a {
+  position: relative;
+  display: block;
+  margin: 0 0 0 15px;
+  padding: 12px 15px 12px 0;
+  color: #012d6b;
+  font-size: 13px;
+  border-top: 1px solid #efefef;
+  border-bottom: 0;
+  text-decoration: none;
 }
