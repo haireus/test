@@ -6,6 +6,7 @@ import ArrowDown from "./logo/arrow-black-down.png";
 import { useMediaQuery } from "react-responsive";
 import navIcon from "./logo/nav.png";
 import userIcon from "./logo/user.png";
+import Footer from "./Footer";
 
 function App() {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 768px)" });
@@ -266,6 +267,7 @@ function App() {
       </header>
 
       <nav className="nav"></nav>
+      <Footer />
     </>
   );
 }
