@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import classnames from "classnames";
 import "./footer640.css";
 import {
@@ -18,7 +18,7 @@ export default function Footer640Width() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    <div>
+    <div className="footer-640-wrapper">
       <div className="footer-go-top">
         <p onClick={() => scrollToTop()}>BACK TO TOP</p>
       </div>
@@ -27,6 +27,7 @@ export default function Footer640Width() {
           href="https://kb.neweggbusiness.com/"
           target={"_blank"}
           title="Customer Service"
+          rel={"noreferrer"}
         >
           Customer Service
         </a>
@@ -51,20 +52,30 @@ const SingleLinkItem = ({
   title: string;
   linkContent: Link[];
 }) => {
-  const [expanded, setExpanded] = useState(false);
+  const contentRef = useRef<HTMLDivElement>(null);
+  const [height, setHeight] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      const contentEl = contentRef.current as HTMLDivElement;
+      setHeight(contentEl.scrollHeight);
+    } else {
+      setHeight(0);
+    }
+  }, [isOpen]);
+
   return (
-    <article className="footer-nav-640">
+    <>
       <h6
-        onClick={() => setExpanded(!expanded)}
-        className={classnames("footer-nav-title-640", {
-          "footer-nav-active": expanded,
-        })}
+        onClick={() => setIsOpen(!isOpen)}
+        className={`footer-nav-title-640
+          ${isOpen ? "footer-nav-title-640-active" : ""}`}
       >
         {title}
       </h6>
-
-      {expanded && (
-        <ul className="footer-list-640">
+      <ul className="accordion-item-container" style={{ height }}>
+        <div ref={contentRef} className="accordion-item-content">
           {linkContent.map((el) => (
             <li className="footer-item-640">
               <a href={el.url} title={el.title}>
@@ -72,8 +83,8 @@ const SingleLinkItem = ({
               </a>
             </li>
           ))}
-        </ul>
-      )}
-    </article>
+        </div>
+      </ul>
+    </>
   );
 };

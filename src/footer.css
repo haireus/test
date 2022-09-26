@@ -76,7 +76,7 @@
 }
 
 .footer-input {
-  padding: 9px 0 11.5px 7px;
+  padding: 9.5px 0 9px 7px;
   border-radius: 3px 0 0 3px;
   border: 2px solid #ccc;
   margin-left: 15px;
@@ -238,6 +238,9 @@
 }
 
 @media (max-width: 640px) {
+  .footer-container {
+    width: 100%;
+  }
 }
 
 @media (max-width: 560px) {

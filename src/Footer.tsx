@@ -104,24 +104,28 @@ export default function Footer() {
                         <a
                           href="http://facebook.com/neweggbusiness"
                           target={"_blank"}
+                          rel={"noreferrer"}
                         ></a>
                       </li>
                       <li className="icon-twitter">
                         <a
-                          href="http://facebook.com/neweggbusiness"
+                          href="https://twitter.com/neweggbusiness"
                           target={"_blank"}
+                          rel={"noreferrer"}
                         ></a>
                       </li>
                       <li className="icon-linkedin">
                         <a
-                          href="http://facebook.com/neweggbusiness"
+                          href="https://www.linkedin.com/company/neweggbusiness"
                           target={"_blank"}
+                          rel={"noreferrer"}
                         ></a>
                       </li>
                       <li className="icon-instagram">
                         <a
-                          href="http://facebook.com/neweggbusiness"
+                          href="https://www.instagram.com/neweggbusiness/"
                           target={"_blank"}
+                          rel={"noreferrer"}
                         ></a>
                       </li>
                     </ul>
@@ -145,7 +149,7 @@ const FooterItem = ({ linkContent }: { linkContent: Link[] }) => {
     <ul className="footer-item-list">
       {linkContent.map((el) => (
         <li key={el.title}>
-          <a href={el.url} title={el.title} target="_blank">
+          <a href={el.url} title={el.title} rel={"noreferrer"} target="_blank">
             {el.title}
           </a>
         </li>

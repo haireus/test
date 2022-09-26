@@ -267,6 +267,7 @@ function App() {
       </header>
 
       <nav className="nav"></nav>
+
       <Footer />
     </>
   );
