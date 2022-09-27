@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import classnames from "classnames";
+
 import "./footer640.css";
 import {
   B2bMarketLink,
@@ -74,8 +74,13 @@ const SingleLinkItem = ({
       >
         {title}
       </h6>
-      <ul className="accordion-item-container" style={{ height }}>
-        <div ref={contentRef} className="accordion-item-content">
+      <ul
+        className={`accordion-item-container ${
+          isOpen ? "accordion-item-container-active" : ""
+        }`}
+        style={{ height }}
+      >
+        <div ref={contentRef} className="">
           {linkContent.map((el) => (
             <li className="footer-item-640">
               <a href={el.url} title={el.title}>
