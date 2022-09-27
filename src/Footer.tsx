@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
 import "./footer.css";
@@ -19,7 +19,31 @@ import {
 export default function Footer() {
   const is640Width = useMediaQuery({ query: "(max-width: 640px)" });
   const [isSubscribe, setIsSubcribe] = useState(false);
+  const inputRef = useRef<any>(null);
 
+  const handleAlert = () => {
+    const inputValue = inputRef.current.value;
+
+    let error;
+    if (!inputValue) {
+      error = "Your email field is empty";
+    }
+
+    if (
+      inputValue &&
+      !String(inputValue)
+        .toLowerCase()
+        .match(
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        )
+    ) {
+      error = "Your email address is invalid";
+    }
+
+    alert(`________________________________________________\n\nYour request cannot continue because of the following errors.\nPlease correct there error(s) and re-submit:\n________________________________________________\n\n- ${error} 
+    `);
+  };
+  console.log(inputRef);
   return (
     <footer id="footer">
       <div className="footer-group">
@@ -89,12 +113,15 @@ export default function Footer() {
                     <form action="https://secure.neweggbusiness.com/new/newmyaccount/newslettersubscribe.aspx?action=manage">
                       <div className="footer-subscribe-normal">
                         <input
+                          ref={inputRef}
                           className="footer-input"
                           type="email"
                           placeholder="Your E-mail"
                           name="LoginName"
                         />
-                        <button>SIGN UP</button>
+                        <button onClick={handleAlert} type={"button"}>
+                          SIGN UP
+                        </button>
                       </div>
                     </form>
                   )}
