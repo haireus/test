@@ -1,5 +1,8 @@
 #footer {
   background-color: #f3f3f3;
+}
+
+.footer-group {
   display: flex;
   justify-content: center;
 }
@@ -205,6 +208,47 @@
 
 .icon-instagram > a:hover {
   background-position: right -120px !important;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-info-container {
+  margin-top: 22px;
+  padding: 30px 0;
+  border-top: 1px solid #eaeaea;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.footer-info-container {
+  font-size: 12px;
+  color: #333;
+}
+
+.footer-logo {
+  margin-bottom: 15px;
+}
+
+.footer-logo img {
+  height: 50px;
+}
+
+#policy a {
+  text-decoration: none;
+  color: #777;
+}
+
+#policy a:hover {
+  border-bottom: 1px solid #f90;
+}
+
+#policy em {
+  margin: 0 10px;
+  font-style: normal;
+  color: #ccc;
 }
 
 @media (max-width: 1600px) {
