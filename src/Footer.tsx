@@ -101,7 +101,9 @@ export default function Footer() {
                 </div>
 
                 <div>
-                  <h6 className="footer-item-title">Connect With Us</h6>
+                  <h6 className="footer-item-title footer-social-title">
+                    Connect With Us
+                  </h6>
                   <ul className="footer-social">
                     <li className="icon-facebook">
                       <a
