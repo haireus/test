@@ -1,3 +1,7 @@
 export const MainContent = () => {
-  return <div>MainContenet</div>;
+  return (
+    <div className="tab-store-main-content">
+      <div className="tab-store-leaderboard"></div>
+    </div>
+  );
 };
