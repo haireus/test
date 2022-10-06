@@ -1,14 +1,14 @@
 import React from "react";
+import { BreadCrumb } from "./BreadScrumb";
 import "./tabStore.css";
+import { TabStoreLayout } from "./TabStoreLayout";
+import { TabStoreMain } from "./TabStoreMain";
 
 export default function TabStore() {
   return (
-    <div className="tab-store-wrapper">
-      <div className="tab-store-container">
-        <div className="tab-store-breadcrumb"></div>
-
-        <div></div>
-      </div>
-    </div>
+    <TabStoreLayout>
+      <BreadCrumb />
+      <TabStoreMain />
+    </TabStoreLayout>
   );
 }
