@@ -43,7 +43,6 @@ export default function Footer() {
     alert(`________________________________________________\n\nYour request cannot continue because of the following errors.\nPlease correct there error(s) and re-submit:\n________________________________________________\n\n- ${error} 
     `);
   };
-  console.log(inputRef);
   return (
     <footer id="footer">
       <div className="footer-group">
