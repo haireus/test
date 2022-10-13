@@ -35,7 +35,10 @@ export const MainContent = () => {
         </div>
       </div>
 
-      <div dangerouslySetInnerHTML={{ __html: dataSEO.SEOContent }}></div>
+      <div
+        id="tab-store-seo"
+        dangerouslySetInnerHTML={{ __html: dataSEO.SEOContent }}
+      ></div>
     </div>
   );
 };
