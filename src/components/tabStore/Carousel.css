@@ -1,0 +1,55 @@
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+}
+
+.indicators > button {
+  margin: 5px;
+}
+
+.indicators > button.active {
+  background-color: green;
+  color: #fff;
+}
+
+.indicators-prev {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 0px;
+  background: url("https://c1.neweggimages.com/webresource/b2b/en/images/icons/icon-swipe1.png")
+    no-repeat left center;
+  width: 15px;
+  margin: -50px 0 0 0;
+  height: 100px;
+  cursor: pointer;
+}
+
+.indicators-next {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  right: 0px;
+  margin: -50px 0 0 0;
+  background: url("https://c1.neweggimages.com/webresource/b2b/en/images/icons/icon-swipe1.png")
+    no-repeat -15px center;
+  width: 15px;
+  height: 100px;
+  cursor: pointer;
+}

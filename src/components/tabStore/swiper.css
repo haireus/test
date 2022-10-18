@@ -1,0 +1,164 @@
+.feature-wrapper {
+  margin-bottom: 15px;
+  border: 1px solid #efefef;
+}
+.feature-title {
+}
+
+.feature-title h3 {
+  margin-bottom: 0;
+  border: 0;
+  border-radius: 3px 3px 0 0;
+  margin: 0 0 8px 0;
+  padding: 10px 15px;
+  text-align: left;
+  font-size: 16px;
+  background: #f8f8f8;
+}
+
+.product-list {
+  display: flex;
+  width: 100%;
+  /* flex-wrap: wrap; */
+}
+
+.product-list .product-item:not(:first-child) {
+  border-left: 1px solid #efefef;
+}
+
+.product-item {
+  margin: 0;
+  padding: 15px 30px;
+  height: auto;
+  width: 25%;
+  border-bottom: 0;
+  color: black;
+}
+
+.product-img img {
+  max-width: 240px;
+  width: 100%;
+}
+
+.product-rating-group {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-brand {
+  display: flex;
+  justify-content: end;
+}
+
+.icon-rating-sm {
+  float: left;
+  padding-left: 73px;
+  height: 16px;
+  overflow: hidden;
+  color: #888 !important;
+  background: url("https://c1.neweggimages.com/webresource/b2b/en/images/icons/icon-rating-sm.png")
+    no-repeat;
+  border-bottom: 0;
+
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.icon-rating-sm-5 {
+  background-position: left top;
+}
+
+.icon-rating-sm-4 {
+  background-position: left -16px;
+}
+
+.icon-rating-sm-3 {
+  background-position: left -32px;
+}
+.icon-rating-sm-2 {
+  background-position: left -48px;
+}
+.icon-rating-sm-1 {
+  background-position: left -64px;
+}
+
+.icon-rating-sm strong {
+  display: none;
+  color: #333;
+}
+
+.icon-rating-sm span {
+  font-size: 12px;
+  color: #333;
+}
+
+.item-product-desc {
+  margin: 0 0 10px 0;
+  color: #333 !important;
+  width: 100%;
+  font-size: 14px;
+  height: auto;
+  max-height: 60px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: pre-wrap;
+}
+
+.item-product-desc a {
+  text-decoration: none;
+  display: inline;
+  color: #333 !important;
+  line-height: 20px;
+}
+
+.item-product-desc:hover a {
+  border-bottom: 1px solid #f90;
+}
+
+.item-price-save {
+  margin-right: 10px;
+  border-radius: 3px 0 0 3px;
+  position: relative;
+  font-size: 12px;
+  display: inline-block;
+  font-weight: bold;
+  background: #cc4e00;
+}
+
+.item-price-save span {
+  padding: 2px 4px 2px 8px;
+  color: white;
+}
+
+.item-price-save span::after {
+  transform: skew(24deg);
+  border-radius: 0 3px 3px 0;
+}
+
+.item-price-was {
+  font-size: 12px;
+  margin-top: 3px;
+  padding: 0;
+  display: inline-block;
+  font-weight: bold;
+  background: none;
+  color: #666;
+  text-decoration: none;
+}
+
+.item-price-now {
+  font-size: 24px;
+  height: auto;
+  font-weight: bold;
+  color: #333;
+}
+
+.item-price-now sub {
+  position: relative;
+  top: -7px;
+  font-size: 70%;
+  line-height: 0;
+  vertical-align: baseline;
+  color: #333;
+}

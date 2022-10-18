@@ -50,7 +50,7 @@
 .tab-store-page-content {
   display: grid;
   gap: 15px;
-  grid-template-columns: 160px auto 160px;
+  grid-template-columns: 160px calc(100% - 320px - 30px) 160px;
 }
 
 .tab-store-side-nav {
