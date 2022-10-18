@@ -48,7 +48,7 @@ export default function FeatureProduct() {
                     <div className="item-rating">
                       {item?.ItemDetail?.Review?.HumanRating ? (
                         <a
-                          href="https://www.neweggbusiness.com/product/product.aspx?item=9b-19-118-233&amp;isfeedbacktab=true"
+                          href={`https://www.neweggbusiness.com/product/product.aspx?item=9b-19-118-233&amp;isfeedbacktab=true`}
                           className={`icon-rating-sm icon-rating-sm-${item?.ItemDetail?.Review?.Rating}`}
                         >
                           <strong>
